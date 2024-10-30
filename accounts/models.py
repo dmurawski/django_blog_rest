@@ -3,4 +3,4 @@ from django.contrib.auth.models import AbstractUser
 
 
 class CustomUser(AbstractUser):
-    name = models.CharField(null=True, blank=True, max_length=100)
+    name = models.CharField(max_length=100, null=True, blank=True)
