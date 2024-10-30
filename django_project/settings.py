@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # local
     "accounts",
     "posts",
+    # 3rd-party apps
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -72,6 +74,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "django_project.wsgi.application"
 
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.AllowAny",
+    ],
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
