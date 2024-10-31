@@ -157,7 +157,7 @@ CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
-    "blog-rest-production.up.railway.app",
+    "https://blog-rest-production.up.railway.app",
 ]
 
 
