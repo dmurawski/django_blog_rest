@@ -153,7 +153,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "accounts.CustomUser"
 
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "https://blog-rest-production.up.railway.app",
+]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
