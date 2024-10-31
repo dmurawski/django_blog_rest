@@ -19,6 +19,7 @@ DEBUG = env.bool("DEBUG", default=False)
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "blog-rest-production.up.railway.app",
 ]
 
 
