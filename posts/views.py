@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import generics
+from rest_framework.permissions import IsAdminUser
 from .models import Post
 from .serializers import PostSerializer, UserSerializer
 from .permissions import IsAuthorOrReadOnly
@@ -23,5 +24,6 @@ class UserList(generics.ListCreateAPIView):
 
 
 class UserDetial(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAdminUser]
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
